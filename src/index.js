@@ -124,4 +124,5 @@
 //         basket_counter_block.style.display = "none";
 //     }
 // }
+import './scss/main.scss';
 
