@@ -6,51 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин рослин</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
     <!-- <link rel="stylesheet" media="print" type="text/css" href="styles/print.css" /> -->
 </head>
 
 <body>
-    <header>
+    <div class="header">
         <div class="header_top">
-            <img src="images/logo2.png" alt="Logo">
-            <h1 class="logo_name">MAKE YOUR GARDEN</h1>
+            <img src="../docs/images/logo2.png" alt="Logo">
+            <h1 class="logo_name">Grow your dream</h1>
         </div>
         <div class="header_buttons">
             <div class="menu_icon">
-                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
-                    <g>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                    class="style-scope yt-icon">
+                    <g class="style-scope yt-icon">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
                     </g>
                 </svg>
             </div>
             <ul class="menu">
                 <li class="menu_element hover">
-                    <a href="main.html">
-                        <p>ГОЛОВНА</p>
-                    </a>
+                    <p class="main">Головна</p>
                 </li>
                 <li class="menu_element hover">
-                    <a href="https://www.w3schools.com/css/css_dimension.asp">
-                        <p>КАТЕГОРІЇ РОСЛИН</p>
-                    </a>
+                    <p class="menu_categories">Категорія</p>
                 </li>
                 <li class="menu_element hover">
-                    <a href="https://www.w3schools.com/css/css_overflow.asp">
-                        <p>ЩОСЬ ЩЕ</p>
-                    </a>
+                    <p class="memes">Меми</p>
                 </li>
             </ul>
-            <div class="header_basket">
-                <div class="basket_counter">
+            <div class="header_cart">
+                <div class="cart_counter">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 30 30">
                         <circle cx="15" cy="15" r="15" />
                     </svg>
-                    <div class="basket_counter_number">0</div>
+                    <div class="cart_counter_number">0</div>
                 </div>
                 <svg height="40" width="40">
-                    <use xlink:href="#icon-header-basket" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <symbol viewBox="0 0 40 40" id="icon-header-basket">
+                    <use xlink:href="#icon-header-cart" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <symbol viewBox="0 0 40 40" id="icon-header-cart">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M0.5 4.5C0.5 3.67157 1.17157 3 2 3H5.4264C7.29819 3 8.97453 4.15869 9.63602 5.9097L10.4264 8.00178C10.4503 8.00062 10.4745 8.00002 10.4987 8L34.0093 7.98001C37.2162 7.97728 39.3967 11.2342 38.1722 14.1982L34.3031 23.5639C33.8485 24.6643 32.8658 25.4581 31.6944 25.6711L18.7279 28.0286C16.5907 28.4172 14.481 27.2236 13.7133 25.1915L6.8296 6.9699C6.60911 6.38623 6.05033 6 5.4264 6H2C1.17157 6 0.5 5.32843 0.5 4.5ZM11.5587 10.9991L16.5197 24.1313C16.7756 24.8087 17.4789 25.2065 18.1913 25.077L31.1577 22.7195C31.3251 22.689 31.4655 22.5756 31.5304 22.4184L35.3995 13.0527C35.8077 12.0648 35.0809 10.9791 34.0119 10.98L11.5587 10.9991Z">
                             </path>
@@ -61,121 +56,108 @@
                 </svg>
             </div>
         </div>
-        </div>
+    </div>
 
-        <div class="popup_back">
-            <div class="popup">
-                <div class="basket_main">
-                    <h2>Кошик</h2>
-                    <svg class="basket_close" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 18.5C0 8.283 8.283 0 18.5 0S37 8.283 37 18.5C37 28.718 28.717 37 18.5 37S0 28.719 0 18.5z">
-                        </path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M20.913 18.5l5.227-5.227a1.707 1.707 0 0 0-2.411-2.413l-5.23 5.227-5.227-5.227a1.705 1.705 0 1 0-2.411 2.413l5.227 5.228-5.227 5.227a1.704 1.704 0 0 0 1.206 2.913 1.7 1.7 0 0 0 1.205-.5l5.228-5.227 5.229 5.227c.333.333.768.5 1.205.5a1.707 1.707 0 0 0 1.207-2.913l-5.228-5.227z"
-                            fill="#fff"></path>
-                    </svg>
-                </div>
-                <div class="basket_rows">
-                    <div class="basket_empty">
-                        <p>Кошик пустий !</p>
-                    </div>
-                    <div class="basket_row" id="basket_row_example">
-                        <div class="row_close_block">
-                            <svg class="row_close" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M0 18.5C0 8.283 8.283 0 18.5 0S37 8.283 37 18.5C37 28.718 28.717 37 18.5 37S0 28.719 0 18.5z">
-                                </path>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.913 18.5l5.227-5.227a1.707 1.707 0 0 0-2.411-2.413l-5.23 5.227-5.227-5.227a1.705 1.705 0 1 0-2.411 2.413l5.227 5.228-5.227 5.227a1.704 1.704 0 0 0 1.206 2.913 1.7 1.7 0 0 0 1.205-.5l5.228-5.227 5.229 5.227c.333.333.768.5 1.205.5a1.707 1.707 0 0 0 1.207-2.913l-5.228-5.227z"
-                                    fill="#fff"></path>
-                            </svg>
-                        </div>
-                        <img class="basket_img" src="images/hyac/item2.jpg">
-                        <div class="basket_description">
-                            <div class="basket_name">Name</div>
-                            <div class="basket_cost">
-                                <div class="basket_item_cost">
-                                    <span class="basket_item_cost_number">100</span>
-                                    <span>грн</span>
-                                </div>
-                                <div class="basket_amount">
-                                    <div class="basket_minus_block">
-                                        <svg class="basket_inc_btn" viewBox="0 0 19 19" id="minus"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M.806 8.75h17.48c.56 0 .713.336.713.75s-.197.75-.72.75H.81c-.668 0-.81-.336-.81-.75s.142-.75.806-.75z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="basket_amount_number">1</div>
-                                    <div class="basket_plus_block">
-                                        <svg class="basket_inc_btn" viewBox="0 0 19 19"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10 9h8.5a.5.5 0 0 1 0 1H10v8.5a.5.5 0 1 1-1 0V10H.5a.5.5 0 1 1 0-1H9V.5a.5.5 0 0 1 1 0V9z"
-                                                fill-rule="evenodd" clip-rule="evenodd"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="basket_sum">
-                                    <span class="sum_number">0</span>
-                                    <span>грн</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="total_sum_block">
-                    <p>Загальна сума:</p>
-                    <div class="total_sum">
-                        <div>
-                            <span class="total_sum_number">0</span>
-                            <span>грн</span>
-                        </div>
-                    </div>
+    <div class="popup_back">
+        <div class="popup_cart">
+            <div class="cart_main">
+                <h2>Кошик</h2>
+                <svg class="big_close" id="cart_close" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 18.5C0 8.283 8.283 0 18.5 0S37 8.283 37 18.5C37 28.718 28.717 37 18.5 37S0 28.719 0 18.5z">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.913 18.5l5.227-5.227a1.707 1.707 0 0 0-2.411-2.413l-5.23 5.227-5.227-5.227a1.705 1.705 0 1 0-2.411 2.413l5.227 5.228-5.227 5.227a1.704 1.704 0 0 0 1.206 2.913 1.7 1.7 0 0 0 1.205-.5l5.228-5.227 5.229 5.227c.333.333.768.5 1.205.5a1.707 1.707 0 0 0 1.207-2.913l-5.228-5.227z"
+                        fill="#fff"></path>
+                </svg>
+            </div>
+            <div class="cart_rows">
+                <div class="cart_empty">
+                    <p>Кошик пустий !</p>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="content_space">
-        <h3 class="category-name">Гіацинти</h3>
-        <div class="section short_section">
-            <div class="item">
-                <img class="item-img" src="images/hyac/item1.jpg" alt="Item 1">
-                <div class="description">
+            <div class="total_sum_block">
+                <p>Загальна сума:</p>
+                <div class="total_sum">
                     <div>
-                        <span>Гіацинт</span>
-                        <span>Double Eros</span>
-                    </div>
-                    <div class="cost_block">
-                        <div>
-                            <span class="old_cost">70</span><span class="currency old_cost">грн</span>
-                        </div>
-                        <div>
-                            <span class="cost">50</span>
-                            <span class="currency cost">грн</span>
-                        </div>
+                        <span class="total_sum_number">0</span>
+                        <span>грн</span>
                     </div>
                 </div>
-                <button type="button">Купити</button>
             </div>
+            <div class="submit_cart"><button class="green_button">Підтвердити</button></div>
         </div>
-        <div class="style_saver">
-            <a href="category1.html">
-                <div class="show_more hover">
-                    <p class="show_more">Show more...</p>
+        <div class="submit_popup">
+            <div class="close_row">
+                <svg class="big_close" id="submit_close" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 18.5C0 8.283 8.283 0 18.5 0S37 8.283 37 18.5C37 28.718 28.717 37 18.5 37S0 28.719 0 18.5z">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.913 18.5l5.227-5.227a1.707 1.707 0 0 0-2.411-2.413l-5.23 5.227-5.227-5.227a1.705 1.705 0 1 0-2.411 2.413l5.227 5.228-5.227 5.227a1.704 1.704 0 0 0 1.206 2.913 1.7 1.7 0 0 0 1.205-.5l5.228-5.227 5.229 5.227c.333.333.768.5 1.205.5a1.707 1.707 0 0 0 1.207-2.913l-5.228-5.227z"
+                        fill="#fff"></path>
+                </svg>
+            </div>
+            <div class="message">
+                <p>Enter your personal information: </p>
+                <div class="message_place"></div>
+            </div>
+            <div class="submit_li">
+                <p>Enter your name: </p>
+                <div class="submit_input_name">
+                    <input type="text" name="form_name">
                 </div>
-            </a>
+            </div>
+            <div class="submit_li">
+                <p>Enter your phone number: </p>
+                <div class="submit_input_phone">
+                    <input type="text" name="form_phone">
+                </div>
+            </div>
+            <div class="submit_li">
+                <p>Enter your email: </p>
+                <div class="submit_input_email">
+                    <input type="text" name="form_email">
+                </div>
+            </div>
+            <div class="submit_forms">
+                <button class="green_button" id="submit_forms_btn">Submit</button>
+            </div>
         </div>
     </div>
-        <footer>
-            <p class="comunication">Комонов Кирило</p>
-            <a href="https://web.telegram.org/#/im?p=@Komonov_Kyrylo" class="telegram_logo">
-                <img src="images/telegram-icon.png" alt="Telegram">
-            </a>
-        </footer>
-        <script src="./js/main.js"></script>
+
+
+    </div>
+    <div class="middle_wrapper">
+        <div class="categories">
+
+            <ul class="categories_list">
+                <div class="categories_close">
+                    <div class="row_close_block">
+                        <svg class="row_close" id="categories_close" viewBox="0 0 37 37"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 18.5C0 8.283 8.283 0 18.5 0S37 8.283 37 18.5C37 28.718 28.717 37 18.5 37S0 28.719 0 18.5z">
+                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.913 18.5l5.227-5.227a1.707 1.707 0 0 0-2.411-2.413l-5.23 5.227-5.227-5.227a1.705 1.705 0 1 0-2.411 2.413l5.227 5.228-5.227 5.227a1.704 1.704 0 0 0 1.206 2.913 1.7 1.7 0 0 0 1.205-.5l5.228-5.227 5.229 5.227c.333.333.768.5 1.205.5a1.707 1.707 0 0 0 1.207-2.913l-5.228-5.227z"
+                                fill="#fff"></path>
+                        </svg>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="content_space">
+
+        </div>
+    </div>
+    <div class="footer">
+        <p class="comunication">Комонов Кирило</p>
+        <a href="https://web.telegram.org/#/im?p=@Komonov_Kyrylo" class="telegram_logo">
+            <img src="../docs/images/telegram-icon.png" alt="Telegram">
+        </a>
+    </div>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
 </body>
 
 </html>
